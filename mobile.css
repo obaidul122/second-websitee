@@ -1,0 +1,501 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar design start */
+
+.nav-logo img{
+
+    width:80px;
+    border-radius:50%;
+    border: 2px solid black;
+}
+
+.nav-logo h1 {
+
+    margin: 0;
+
+}
+
+.nav-menu{
+
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+
+}
+
+.nav-menu a{
+    background-color: #0c6168;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav-menu a:hover{
+    background-color: gray;
+}
+
+
+.navbar{
+    background-color:#40868b;
+    padding: 5px;
+    text-align: center;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    padding:0px;
+
+}
+
+/* for desktop */
+
+[class*="col-"]{
+
+    float:left ;
+    padding: 10px;
+}  
+
+/* for mobile */
+
+[class*="col-"]{
+
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+.navbar::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+/* navbar design ends*/
+
+
+/* profile design start */
+
+
+.profile{
+
+ text-align: center; 
+ margin: 53px;
+ padding: 22px;
+
+
+}
+
+.image{
+
+    position: relative;
+}
+
+.image img{
+
+    width: 66px;
+    position: absolute;
+    right: 16px;
+    
+
+}
+
+.image2{
+    position: relative;
+}
+
+.image2 img{
+
+    width: 66px;
+    position: absolute;
+    left:13px;
+
+
+}
+
+
+
+/* profile design ends */
+
+
+/*  about me part design start */
+
+img{
+
+    width:200px;
+}
+
+.about-image img{
+
+    border: 3px solid black;
+    border-radius: 60%;
+}
+
+.cv-button{
+
+    background-color: lawngreen;
+    padding: 23px;
+    color: white;
+    font-size: 33px;
+
+}
+
+
+.dotted{
+
+    border: dotted 4px white;
+    border-bottom: none;
+    width: 333px;
+    
+}
+
+
+
+.about-me{
+
+    text-align: center;
+    background-color: #0c6168;
+    color:white;
+    padding: 12px;
+}
+
+.about-me::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* about me part design ends */
+
+
+/* card design part start */
+
+
+.all-card{
+
+    padding: 3px;
+}
+
+.all-card .card{
+
+    background-color: gray;
+    padding: 5px;
+    margin: 6px;
+    border-radius: 6px;
+    height: 700px;
+
+}
+
+.card:hover{
+
+    box-shadow: 0px 4px 8px 5px black;
+}
+
+
+.card-image{
+    
+
+    text-align: center;
+    
+
+}
+
+.card-image .my-image{
+
+    width:70px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-top: 44px;
+}
+
+
+.card-title h1{
+    background-color:#616161;
+    padding: 11px;
+    text-align: center;
+}
+
+.skill{
+
+    padding: p
+}
+
+ .card-des  li{
+
+    list-style: none;
+    margin: 22px;
+    position: relative;
+    
+}
+
+.card-des ul li::before{
+
+ content: '';
+ position: absolute;
+width: 100%;
+height: 10px;
+background-color: rgb(225, 255, 0);
+ top:calc(100% + 5px);
+ border-radius: 1000px;
+}
+
+
+
+.card-des ul li::after{
+
+    content: '';
+    position: absolute;
+   width:0;
+   height: 10px;
+   background-color:black;
+    top:calc(100% + 5px);
+    border-radius: 1000px;
+    left: 0;
+
+
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+   }
+
+   .card-des ul li.html::after{
+    animation-name: html;
+   }
+
+   @keyframes html{
+
+    to{
+        width: 50%;
+    }
+   }
+
+
+   .card-des ul li.CSS::after{
+    animation-name: CSS;
+   }
+
+   @keyframes CSS{
+
+    to{
+        width: 40%;
+    }
+   }
+
+
+   .card-des ul li.BOOTSTRAP::after{
+    animation-name: BOOTSTRAP;
+   }
+
+   @keyframes BOOTSTRAP{
+
+    to{
+        width: 50%;
+    }
+   }
+
+
+   .card-des ul li.JABASCRIPT::after{
+    animation-name: JABASCRIPT;
+   }
+
+   @keyframes JABASCRIPT{
+
+    to{
+        width: 50%;
+    }
+   }
+
+
+   .card-des ul li.JQUERY::after{
+    animation-name: JQUERY;
+   }
+
+   @keyframes JQUERY{
+
+    to{
+        width: 50%;
+    }
+   }
+
+
+   .card-des ul li.NODE.JS::after{
+    animation-name: NODE;
+   }
+
+   @keyframes NODE{
+
+    to{
+        width: 50%;
+    }
+   }
+
+
+   .card-des ul li.html::after{
+    animation-name: html;
+   }
+
+   @keyframes html{
+
+    to{
+        width: 50%;
+    }
+   }
+
+
+   .card-des ul li.html::after{
+    animation-name: html;
+   }
+
+   @keyframes html{
+
+    to{
+        width: 50%;
+    }
+   }
+
+
+   .card-des ul li.html::after{
+    animation-name: html;
+   }
+
+   @keyframes html{
+
+    to{
+        width: 50%;
+    }
+   }
+
+.all-card::after{
+
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+
+
+/* card design part ends */
+
+
+/* contact design start */
+
+
+.contact-details{
+
+    padding: 11px;
+    text-align: center;
+    background-color: #0c6168;
+    margin: 11px;
+    border-radius: 6px;
+}
+
+.contact-details .achivement{
+
+    color: white;
+    margin: 11px;
+
+
+}
+.achivement h1{
+
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+.contact h1{
+
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.contact input{
+
+    padding: 3px;
+    border-radius: 3px;
+    resize: none;
+    margin: 10px;
+    width: 100%;
+}
+
+
+.contact .textarea{
+
+    
+    padding:100px;
+    resize: none;
+}
+
+
+.button{
+
+    padding: 12px;
+    margin: 12px;
+    background-color: aqua;
+    border-radius: 6px;
+    border: 4px solid black;
+}
+
+
+
+.contact-details::after{
+
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* contact design ends */
+
+
+
+/* footer design part start */
+
+
+
+.footer-container{
+
+    background-color: black;
+    width: 100%;
+    padding: 44px;
+    color: white;
+    text-align: center;
+}
+
+.footer-container .footer-value a{
+
+    color: white;
+    list-style: none;
+    margin: 22px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer-container p{
+
+    text-align: center;
+    
+    text-transform: uppercase;
+    background-color: #40868b;
+    margin: 55px 100px;
+    border-radius: 23px;
+   
+}
+
+
+/* footer design part ends */
